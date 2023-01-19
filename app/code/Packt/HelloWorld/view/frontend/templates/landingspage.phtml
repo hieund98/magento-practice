@@ -1,0 +1,24 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block Landingspage */
+
+use Packt\HelloWorld\Block\Landingspage;
+
+?>
+
+<h2>Hello World</h2>
+<p>
+    <a href="<?php echo $block->getLandingsUrl(); ?>">Go to
+        landings URL</a>
+</p>
+<p>
+    <a href="<?php echo $block->getRedirectUrl(); ?>">Go to
+        redirect URL</a>
+</p>
+<p>
+    <?php echo __('Test translation') ?>
+</p>

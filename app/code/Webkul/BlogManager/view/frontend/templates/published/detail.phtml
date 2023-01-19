@@ -1,0 +1,19 @@
+<?php
+$blog = $block->getBlog();
+?>
+<div class="blog-collection-wrapper">
+    <div class="blog-published">
+        <div class="blog-item">
+            <div class="blog-item-title">
+                <h1> <?= $blog->getTitle(); ?> </h1>
+            </div>
+            <div class="blog-item-details">
+                <div><?= __("Created At:") . ' ' . $block->getFormattedDate($blog->getCreatedAt()); ?></div>
+                <div><?= __("Author:") . ' ' . $block->getAuthor($blog->getUserId()); ?></div>
+            </div>
+            <div class="blog-item-content">
+                <p><?= $blog->getContent() ?></p>
+            </div>
+        </div>
+    </div>
+</div>

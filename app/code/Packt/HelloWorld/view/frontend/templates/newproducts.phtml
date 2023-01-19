@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Packt\HelloWorld\Block\Newproducts */
+?>
+<h2>New products</h2>
+<ul>
+    <?php foreach ($block->getProducts() as $product): ?>
+        <li><?php echo $product->getName() ?></li>
+    <?php endforeach; ?>
+</ul>
